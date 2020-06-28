@@ -201,6 +201,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
     @Override
     public void onBackPressed() {
+        audioRecord.stopPlaying();
         finish();
         super.onBackPressed();
     }
